@@ -31,7 +31,7 @@
         "#Lib/*": "./src/lib/*"
     },
     "lint-staged": {
-        "*.js": "eslint --cache --fix",
+        "*.js": "eslint --fix",
         "*.{js,md}": "prettier --write"
     }
 }
