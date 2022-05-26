@@ -1,0 +1,10 @@
+{
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "module": "es6",
+        "baseUrl": "./",
+        "paths": {
+            "#Lib/*": ["./src/lib/*"]
+        }
+    }
+}
