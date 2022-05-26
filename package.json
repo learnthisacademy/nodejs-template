@@ -7,7 +7,8 @@
         "dev": "nodemon src/index.js",
         "start": "node src/index.js",
         "lint": "eslint src/**/*.js --fix",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --write .",
+        "prepare": "husky install"
     },
     "author": {
         "name": "LearnThis Academy",
@@ -21,10 +22,16 @@
         "eslint-plugin-import": "2.26.0",
         "eslint-plugin-n": "15.2.0",
         "eslint-plugin-promise": "6.0.0",
+        "husky": "8.0.1",
+        "lint-staged": "12.4.2",
         "nodemon": "2.0.16",
         "prettier": "2.6.2"
     },
     "imports": {
         "#Lib/*": "./src/lib/*"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.{js,md}": "prettier --write"
     }
 }
