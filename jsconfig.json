@@ -8,7 +8,7 @@
             "#Controllers/*": ["./src/controllers/*"],
             "#Config/*": ["./src/config/*"],
             "#Dto/*": ["./src/Dto/*"],
-            "#Routers/*": ["src/routes/*"],
+            "#Routes/*": ["./src/routes/*"],
             "#Schemas/*": ["./src/schemas/*"]
         }
     }

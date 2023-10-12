@@ -12,6 +12,10 @@
         "postinstall": "npm run prepare"
     },
     "dependencies": {
+        "@sinclair/typebox": "^0.31.17",
+        "ajv": "8.12.0",
+        "ajv-errors": "3.0.0",
+        "ajv-formats": "2.1.1",
         "dotenv": "16.3.1",
         "express": "4.18.2",
         "mongoose": "7.6.1"
@@ -38,7 +42,7 @@
         "#Controllers/*": "./src/controllers/*",
         "#Config/*": "./src/config/*",
         "#Dto/*": "./src/Dto/*",
-        "#Routers/*": "./src/routers/*",
+        "#Routes/*": "./src/routes/*",
         "#Schemas/*": "./src/schemas/*"
     },
     "lint-staged": {

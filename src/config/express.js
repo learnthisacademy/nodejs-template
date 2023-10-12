@@ -1,4 +1,4 @@
-import UserRouter from "#Routers/users.routes.js"
+import { UserRouter } from "../routes/users.routes.js"
 import express, { json } from "express"
 
 const expressApp = express()

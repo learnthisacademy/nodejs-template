@@ -1,14 +1,16 @@
 
 import { Router } from "express";
+import userRegisterDto from "#Dto/user-register.dto.js";
 
-const UserRouter = Router()
 
-UserRouter.post('/register', middlewareValidate)
-UserRouter.post('/login', middlewareValidate)
-UserRouter.get('/profile', middlewareValidate)
-UserRouter.patch('/update-data', middlewareValidate)
-UserRouter.patch('/update-email', middlewareValidate)
-UserRouter.patch('/update-password', middlewareValidate)
-UserRouter.delete('/unregister', middlewareValidate)
+export const UserRouter = Router()
 
-export default UserRouter
+UserRouter.post('/register', userRegisterDto(), ( req, res ) => {
+    return res.send()
+})
+UserRouter.post('/login')
+UserRouter.get('/profile')
+UserRouter.patch('/update-data')
+UserRouter.patch('/update-email')
+UserRouter.patch('/update-password')
+UserRouter.delete('/unregister')
