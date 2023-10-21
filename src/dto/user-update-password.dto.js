@@ -1,4 +1,4 @@
-import { passwordDTOschema } from "#Lib/dto-types.js";
+import { passwordDTOschema } from "#Dto/dto-types.js";
 import { Type } from "@sinclair/typebox";
 import Ajv from "ajv";
 import addErrors from "ajv-errors"

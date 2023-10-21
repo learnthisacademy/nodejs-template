@@ -2,7 +2,7 @@ import { Type } from "@sinclair/typebox";
 import Ajv from "ajv";
 import addFormats from "ajv-formats"
 import addErrors from "ajv-errors"
-import { _idDTOschema } from "#Lib/dto-types.js";
+import { _idDTOschema } from "#Dto/dto-types.js";
 
 const userProfileSchema = Type.Object({
     _id: _idDTOschema //TODO esto va en el Header

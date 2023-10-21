@@ -2,7 +2,7 @@ import { Type } from "@sinclair/typebox";
 import Ajv from 'ajv';
 import addFormats from "ajv-formats"
 import addErrors from "ajv-errors"
-import { _idDTOschema, emailDTOschema, nameDTOschema, passwordDTOschema, surnameDTOschema } from "#Lib/dto-types.js";
+import { _idDTOschema, emailDTOschema, nameDTOschema, passwordDTOschema, surnameDTOschema } from "#Dto/dto-types.js";
 
 const RegisterDTOschema = Type.Object({
     name: nameDTOschema,

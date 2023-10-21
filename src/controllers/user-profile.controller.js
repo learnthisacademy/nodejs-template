@@ -5,7 +5,7 @@ const userProfileController = async( req, res ) => {
     const { id } = req
     const existingUserById = await UserModel.findById(id).exec();
     if( !existingUserById )
-    return res.send(401).send('Credenciales incorrectas')
+    return res.send(401).send({errors: ['Credenciales incorrectas']})
 
     const { _id, name, surname, email } = existingUserById
 

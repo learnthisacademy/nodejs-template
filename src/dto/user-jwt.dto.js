@@ -4,7 +4,7 @@ const userJWTDTO = async( req, res, next ) => {
     
     const { authorization } = req.headers
     if( !authorization ) 
-        return res.status(401).send('Usuario no autorizado')
+        return res.status(401).send({errors: ['Usuario no autorizado']})
     try{
         const encoder = new TextEncoder()
 
@@ -13,7 +13,7 @@ const userJWTDTO = async( req, res, next ) => {
         next()
 
     } catch(err) {
-        return res.status(401).send('User not Authorized')
+        return res.status(401).send({errors: ['Usuario no autorizado']})
     }
 }
 export default userJWTDTO

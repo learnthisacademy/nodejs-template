@@ -41,10 +41,11 @@
         "prettier": "2.8.8"
     },
     "imports": {
-        "#Lib/*": "./src/lib/*",
-        "#Controllers/*": "./src/controllers/*",
         "#Config/*": "./src/config/*",
+        "#Controllers/*": "./src/controllers/*",
+        "#Constants/*": "./src/constants/*",
         "#Dto/*": "./src/Dto/*",
+        "#Lib/*": "./src/lib/*",
         "#Routes/*": "./src/routes/*",
         "#Schemas/*": "./src/schemas/*"
     },

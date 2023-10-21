@@ -7,12 +7,12 @@ const userUnregisterController = async( req, res ) => {
     const { password } = req.body
     const existingUserById = await UserModel.findById(id).exec();
     if( !existingUserById )
-    return res.send(401).send('Credenciales incorrectas')
+    return res.send(401).send({errors: ['Credenciales incorrectas']})
  
     const hash = existingUserById.password
     const checkPassword = await bcrypt.compare( password, hash)
     if( !checkPassword )
-        return res.send(401)
+        return res.status(401).send({errors: ['crenciales incorrectas']})
     
     await existingUserById.deleteOne()
 
