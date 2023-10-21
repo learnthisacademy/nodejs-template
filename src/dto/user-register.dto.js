@@ -5,13 +5,12 @@ import addErrors from "ajv-errors"
 import { _idDTOschema, emailDTOschema, nameDTOschema, passwordDTOschema, surnameDTOschema } from "#Lib/dto-types.js";
 
 const RegisterDTOschema = Type.Object({
-    _id: _idDTOschema,
     name: nameDTOschema,
     surname: surnameDTOschema,
     email: emailDTOschema,
     password: passwordDTOschema
 })
- 
+
 const ajv = new Ajv({ allErrors: true })
 
 

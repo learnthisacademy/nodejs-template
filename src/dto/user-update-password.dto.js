@@ -4,8 +4,8 @@ import Ajv from "ajv";
 import addErrors from "ajv-errors"
 
 const userUpdatePasswordSchema = Type.Object({
-    oldPassword: passwordDTOschema,
-    newPassword: passwordDTOschema
+    password: passwordDTOschema,
+    newPlainPassword: passwordDTOschema
 })
 
 const ajv = new Ajv({ allErrors: true })

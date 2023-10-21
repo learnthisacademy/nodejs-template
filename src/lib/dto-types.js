@@ -31,17 +31,17 @@ export const passwordDTOschema = Type.String({
     maxLength: 80,
     errorMessage: {
         type: 'el tipo de la contraseña no es correcto, debe ser un String',
-        minLength: 'la longitud minima de la contraseña es 10 ',
-        maxLength: 'la longitud maxima de la contraseña es 50'
+        minLength: 'la longitud minima de la contraseña es 8',
+        maxLength: 'la longitud maxima de la contraseña es 15'
     }
 })
 
 export const surnameDTOschema = Type.String({
-    minLength: 3,
-    maxLength: 30,
+    minLength: 4,
+    maxLength: 50,
     errorMessage: {
         type: 'El tipo surname debe ser un String',
-        maxLength: 'la longitud maxima de surname es 50', 
-        minLength: 'la longitud minima de surname es 4',
+        maxLength: 'la longitud maxima de surname es 4', 
+        minLength: 'la longitud minima de surname es 50',
     }
 })

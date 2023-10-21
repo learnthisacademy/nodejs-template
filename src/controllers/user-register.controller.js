@@ -20,9 +20,8 @@ const userRegisterController = async( req, res ) => {
         email,
         password: hashedPassword
     })
-    
     await user.save()
-
-    return res.status(201).send('usuario registrado con exito')
+    return res.send('usuario registrado con exito')
 }
+
 export default userRegisterController
