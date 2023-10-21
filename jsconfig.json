@@ -7,7 +7,7 @@
             "#Lib/*": ["./src/lib/*"],
             "#Controllers/*": ["./src/controllers/*"],
             "#Config/*": ["./src/config/*"],
-            "#Dto/*": ["./src/Dto/*"],
+            "#Dto/*": ["./src/dto/*"],
             "#Routes/*": ["./src/routes/*"],
             "#Schemas/*": ["./src/schemas/*"]
         }

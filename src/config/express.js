@@ -4,8 +4,8 @@ import express, { json } from "express"
 const expressApp = express()
 
 //middlewares
-expressApp.use( express.json() )
 
+expressApp.use(express.json())
 
 //Routes
 

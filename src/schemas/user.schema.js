@@ -1,15 +1,15 @@
 import mongoose from "mongoose"
 
-const { Schema, Model } = mongoose
+const { Schema, model } = mongoose
 
-const userSchema  = Schema({
+const UserSchema  = Schema({
     _id: { type: String, _id: false },
     name: { type: String, require: true, minLength: 2, maxLength: 15 },
-    surname: { type: String, require: true, minLength: 4, maxLength: 50 },
+    surname: { type: String, require: true, minLength: 3, maxLength: 30 },
     email: { type: String, unique: true, require: true },
-    password: { type: String, require: true, minLength: 10, maxLength: 25}
+    password: { type: String, require: true, minLength: 8, maxLength: 80}
 })
 
-const userModel = Model("User", userSchema)
+const UserModel = model("User", UserSchema)
 
-export default userModel
+export default UserModel
