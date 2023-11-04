@@ -1,6 +1,6 @@
 import productModel from "../Schemas/product-schema"
 
-const eliminarProductoController = async( req, res ) => {
+const deleteProductController = async( req, res ) => {
 
 const { name } = req.body
 
@@ -13,4 +13,4 @@ productModel.save()
 return res.send()
 }
 
-export default eliminarProductoController
+export default deleteProductController

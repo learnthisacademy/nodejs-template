@@ -1,6 +1,6 @@
 import productModel from "../Schemas/product-schema"
 
-const consultarProductoController = async( req, res ) => {
+const consultProductController = async( req, res ) => {
 
    const { id } = req.params
 
@@ -17,4 +17,4 @@ const consultarProductoController = async( req, res ) => {
    })
 }
 
-export default consultarProductoController
+export default consultProductController

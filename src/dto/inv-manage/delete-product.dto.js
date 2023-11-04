@@ -3,7 +3,7 @@ import { nameDTO } from "../../lib/dto-types";
 import Ajv from "ajv";
 import ajvErrors from "ajv-errors";
 
-const eliminarProductoSchema = Type.Object({
+const deteleProductSchema = Type.Object({
    name: nameDTO
 })
 
@@ -13,9 +13,9 @@ const ajv = new Ajv({ allErrors: true })
 
 ajvErrors(ajv)
 
-const validateSchema = ajv.compile( eliminarProductoSchema )
+const validateSchema = ajv.compile( deteleProductSchema )
 
-const eliminarProductoDTO = ( req, res, next ) => {
+const deteleProductDTO = ( req, res, next ) => {
 
    const isDTOValide = validateSchema( req.body )
    if( !isDTOValide )
@@ -24,4 +24,4 @@ const eliminarProductoDTO = ( req, res, next ) => {
    next()
 }
 
-export default eliminarProductoDTO
+export default deteleProductDTO

@@ -3,7 +3,7 @@ import { nameDTO, priceDTO, quantityInventorDTO } from "../dto-types";
 import Ajv from "ajv";
 import ajvErrors from "ajv-errors";
 
-const editarProductoSchema = Type.Object({
+const editProductSchema = Type.Object({
    id: idDTO,
    name: nameDTO,
    quantity: quantityInventorDTO,
@@ -16,9 +16,9 @@ const ajv = new Ajv({allErrors: true})
 
 ajvErrors(ajv)
 
-const validateSchema = ajv.compile( editarProductoSchema )
+const validateSchema = ajv.compile( editProductSchema )
 
-const editarProductoDTO = ( req, res, next ) => {
+const editProductDTO = ( req, res, next ) => {
 
    const isDTOValid = validateSchema( req.body )
    if( !isDTOValid ) 
@@ -27,4 +27,4 @@ const editarProductoDTO = ( req, res, next ) => {
    next()
 }
 
-export default editarProductoDTO
+export default editProductDTO

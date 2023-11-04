@@ -1,6 +1,6 @@
 import productModel from "../Schemas/product-schema"
 
-const editarProductoController = async( req, res ) => {
+const editProductController = async( req, res ) => {
 
    const { id } = req.params
    const { name, price, quantity } = req.body
@@ -23,4 +23,4 @@ const editarProductoController = async( req, res ) => {
 
 }
 
-export default editarProductoController
+export default editProductController
