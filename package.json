@@ -4,9 +4,9 @@
     "type": "module",
     "description": "The objective of the project is to provide a base project with the minimum necessary tools to develop a project based on Node.JS.",
     "scripts": {
-        "dev": "nodemon src/index.js",
-        "start": "node src/index.js",
-        "lint": "eslint src/**/*.js --fix",
+        "dev": "nodemon index.js",
+        "start": "node index.js",
+        "lint": "eslint *.js --fix",
         "prettier": "prettier --write .",
         "prepare": "husky install",
         "postinstall": "npm run prepare"
@@ -41,13 +41,16 @@
         "prettier": "^3.0.3"
     },
     "imports": {
-        "#Config/*": "./src/config/*",
-        "#Controllers/*": "./src/controllers/*",
-        "#Constants/*": "./src/constants/*",
-        "#Dto/*": "./src/Dto/*",
-        "#Lib/*": "./src/lib/*",
-        "#Routes/*": "./src/routes/*",
-        "#Schemas/*": "./src/schemas/*"
+        "#Config/*": "./config/*",
+        "#Controllers/inv-manage/*": "./ProductsManagement/src/controllers/*",
+        "#Dto/inv-manage/*": "./ProductsManagement/src/dto/*",
+        "#Routes/inv-manage/*": "./ProductsManagement/src/routes/*",
+        "#Schemas/inv-manage/*": "./ProductsManagement/src/schemas/*",
+        "#Controllers/us-manage/*": "./UsersManagement/src/controllers/*",
+        "#Constants/us-manage/*": "./UsersManagement/src/constants/*",
+        "#Dto/us-manage/*": "./UsersManagement/src/dto/*",
+        "#Routes/us-manage/*": "./UsersManagement/src/routes/*",
+        "#Schemas/us-manage/*": "./UsersManagement/src/schemas/*"
     },
     "lint-staged": {
         "*.js": "eslint --fix",

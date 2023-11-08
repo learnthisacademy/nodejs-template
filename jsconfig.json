@@ -4,13 +4,16 @@
         "module": "Node16",
         "baseUrl": "./",
         "paths": {
-            "#Config/*": ["./src/config/*"],
-            "#Controllers/*": ["./src/controllers/*"],
-            "#Constants/*": ["./src/constants/*"],
-            "#Dto/*": ["./src/dto/*"],
-            "#Lib/*": ["./src/lib/*"],
-            "#Routes/*": ["./src/routes/*"],
-            "#Schemas/*": ["./src/schemas/*"],
+            "#Config/*": ["./config/*"],
+            "#Controllers/inv-manage/*": ["ProductsManagement/src/controllers/*"],
+            "#Dto/inv-manage/*": ["ProductsManagement/src/dto/*"],
+            "#Routes/inv-manage/*": ["ProductsManagement/src/routes/*"],
+            "#Schemas/inv-manage/*": ["ProductsManagement/src/schemas/*"],
+            "#Controllers/us-manage/*": ["UsersManagement/src/controllers/*"],
+            "#Constants/us-manage/*": ["UsersManagement/src/constants/*"],
+            "#Dto/us-manage/*": ["UsersManagement/src/dto/*"],
+            "#Routes/us-manage/*": ["UsersManagement/src/routes/*"],
+            "#Schemas/us-manage/*": ["UsersManagement/src/schemas/*"]
         }
     }
 }
